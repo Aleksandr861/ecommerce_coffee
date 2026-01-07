@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Доставка и оплата — RoastLab (демо)</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 10c0-2.2 1.8-4 4-4h2c2.2 0 4 1.8 4 4v3c0 2.8-2.2 5-5 5s-5-2.2-5-5v-3Z" stroke="white" stroke-width="2.2"/>
+            <path d="M17 11h1c1.7 0 3 1.3 3 3s-1.3 3-3 3h-1" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Roast<span style="opacity:.65">Lab</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация магазина">
+        <a href="catalog.html">Каталог</a>
+        <a href="shipping.html" style="background: rgba(192,122,90,0.12); color: var(--text)">Доставка</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary small" href="catalog.html">Купить</a>
+        <a class="cart-btn" href="cart.html" aria-label="Корзина">
+          🛒 <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+        <button class="burger" data-burger aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="catalog.html">Каталог</a>
+      <a href="shipping.html">Доставка</a>
+      <a href="about.html">О бренде</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> / Доставка и оплата</div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h2>Доставка и оплата</h2>
+      <p class="lead">Информационная страница повышает доверие и снижает вопросы в поддержку.</p>
+
+      <div class="grid3">
+        <div class="card pad">
+          <h3>Доставка</h3>
+          <p>Курьер по городу — 290 ₽. Бесплатно от 2 500 ₽. (Демо)</p>
+        </div>
+        <div class="card pad">
+          <h3>Самовывоз</h3>
+          <p>Возможен по договорённости. (Демо)</p>
+        </div>
+        <div class="card pad">
+          <h3>Оплата</h3>
+          <p>Онлайн картой / при получении. В реальном проекте — платёжный провайдер.</p>
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+      <div class="card pad">
+        <h3 style="margin:0 0 8px">FAQ</h3>
+        <p style="margin:0; color:var(--muted)">Добавьте 6–10 ответов: сроки, возврат, повреждения, промокоды, юридическая информация.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>RoastLab</strong>
+        <div class="small-note">Демо-магазин для портфолио: каталог, карточка товара, корзина, checkout. 2026</div>
+      </div>
+      <div style="text-align:right">
+        <div class="small-note">Поддержка: hello@roastlab.demo • +7 (900) 000‑00‑00</div>
+        <div class="small-note">Оплата/доставка — демо. Подключается в реальном проекте.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

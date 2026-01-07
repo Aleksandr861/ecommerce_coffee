@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Оформление заказа — RoastLab (демо)</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 10c0-2.2 1.8-4 4-4h2c2.2 0 4 1.8 4 4v3c0 2.8-2.2 5-5 5s-5-2.2-5-5v-3Z" stroke="white" stroke-width="2.2"/>
+            <path d="M17 11h1c1.7 0 3 1.3 3 3s-1.3 3-3 3h-1" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Roast<span style="opacity:.65">Lab</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация магазина">
+        <a href="catalog.html">Каталог</a>
+        <a href="shipping.html">Доставка</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary small" href="catalog.html">Купить</a>
+        <a class="cart-btn" href="cart.html" aria-label="Корзина">
+          🛒 <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+        <button class="burger" data-burger aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="catalog.html">Каталог</a>
+      <a href="shipping.html">Доставка</a>
+      <a href="about.html">О бренде</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> / <a href="cart.html">Корзина</a> / Оформление</div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h2>Оформление заказа (демо)</h2>
+      <p class="lead">Шаблон checkout: контактные данные, доставка, оплата, комментарий. В реальном проекте подключается платёж и подтверждение.</p>
+
+      <div class="grid2">
+        <div class="card pad">
+          <h3 style="margin:0 0 10px">Контактные данные</h3>
+          <div class="grid2">
+            <input class="input" placeholder="Имя"/>
+            <input class="input" placeholder="Телефон"/>
+          </div>
+          <div style="height:10px"></div>
+          <input class="input" placeholder="Email"/>
+          <div style="height:12px"></div>
+
+          <h3 style="margin:0 0 10px">Доставка</h3>
+          <select>
+            <option>Курьер по городу (демо)</option>
+            <option>ПВЗ (демо)</option>
+            <option>Самовывоз (демо)</option>
+          </select>
+          <div style="height:10px"></div>
+          <input class="input" placeholder="Адрес доставки"/>
+          <div style="height:12px"></div>
+
+          <h3 style="margin:0 0 10px">Оплата</h3>
+          <select>
+            <option>Картой онлайн (демо)</option>
+            <option>При получении (демо)</option>
+          </select>
+          <div style="height:10px"></div>
+          <textarea class="input" style="min-height:110px; resize:vertical" placeholder="Комментарий к заказу (опционально)"></textarea>
+
+          <div style="height:12px"></div>
+          <button class="btn" style="width:100%">Оформить (демо)</button>
+          <div class="small-note">Нажимая кнопку, вы соглашаетесь с политикой. Демо‑форма не отправляет данные.</div>
+        </div>
+
+        <aside class="card pad">
+          <h3 style="margin:0 0 10px">Краткий итог</h3>
+          <p style="margin:0; color:var(--muted)">Сумма подтянется с корзины (смотрите страницу корзины). Для реального проекта — серверная проверка цены.</p>
+          <div style="height:12px"></div>
+          <a class="btn secondary" href="cart.html" style="width:100%">Вернуться в корзину</a>
+          <div style="height:12px"></div>
+          <div class="card pad" style="background: rgba(26,26,26,0.02)">
+            <strong>Совет для портфолио</strong>
+            <div class="small-note">Покажите состояния: пустая корзина, ошибка формы, успешный заказ, промокод.</div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>RoastLab</strong>
+        <div class="small-note">Демо-магазин для портфолио: каталог, карточка товара, корзина, checkout. 2026</div>
+      </div>
+      <div style="text-align:right">
+        <div class="small-note">Поддержка: hello@roastlab.demo • +7 (900) 000‑00‑00</div>
+        <div class="small-note">Оплата/доставка — демо. Подключается в реальном проекте.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

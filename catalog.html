@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Каталог — RoastLab (демо)</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 10c0-2.2 1.8-4 4-4h2c2.2 0 4 1.8 4 4v3c0 2.8-2.2 5-5 5s-5-2.2-5-5v-3Z" stroke="white" stroke-width="2.2"/>
+            <path d="M17 11h1c1.7 0 3 1.3 3 3s-1.3 3-3 3h-1" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Roast<span style="opacity:.65">Lab</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация магазина">
+        <a href="catalog.html" style="background: rgba(192,122,90,0.12); color: var(--text)">Каталог</a>
+        <a href="shipping.html">Доставка</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary small" href="catalog.html">Купить</a>
+        <a class="cart-btn" href="cart.html" aria-label="Корзина">
+          🛒 <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+        <button class="burger" data-burger aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="catalog.html">Каталог</a>
+      <a href="shipping.html">Доставка</a>
+      <a href="about.html">О бренде</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> / Каталог</div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h2>Каталог</h2>
+      <p class="lead">В демо фильтры — UI‑концепт. Можно легко подключить реальную логику (JS/React/Vue) или серверную фильтрацию.</p>
+
+      <div class="filters">
+        <div class="filter-box">
+          <div class="card pad">
+            <label style="font-weight:900">Поиск</label>
+            <div style="height:8px"></div>
+            <input class="input" placeholder="Введите название..." />
+
+            <div class="filter-group">
+              <label>Обжарка</label>
+              <div class="check"><input type="checkbox"/><span>Светлая</span></div>
+              <div class="check"><input type="checkbox"/><span>Средняя</span></div>
+              <div class="check"><input type="checkbox"/><span>Тёмная</span></div>
+            </div>
+
+            <div class="filter-group">
+              <label>Формат</label>
+              <div class="check"><input type="checkbox"/><span>Зёрна</span></div>
+              <div class="check"><input type="checkbox"/><span>Молотый</span></div>
+              <div class="check"><input type="checkbox"/><span>Дрип‑пакеты</span></div>
+              <div class="check"><input type="checkbox"/><span>Аксессуары</span></div>
+            </div>
+
+            <div class="filter-group">
+              <label>Цена</label>
+              <select>
+                <option>Любая</option>
+                <option>до 600 ₽</option>
+                <option>600–1200 ₽</option>
+                <option>1200+ ₽</option>
+              </select>
+            </div>
+
+            <div style="height:12px"></div>
+            <a class="btn secondary" href="#">Применить (демо)</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="grid3">
+            
+<article class="card product-card">
+  <img src="assets/img/products/espresso_blend.png" alt="Эспрессо Blend"/>
+  <div class="body">
+    <strong>Эспрессо Blend</strong>
+    <span>250 г • средняя обжарка</span>
+    <div class="price-row">
+      <div class="price">690 ₽</div>
+      <span class="tag">Хит</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="espresso_blend"
+        data-title="Эспрессо Blend"
+        data-price="690"
+        data-img="assets/img/products/espresso_blend.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/ethiopia.png" alt="Эфиопия Yirgacheffe"/>
+  <div class="body">
+    <strong>Эфиопия Yirgacheffe</strong>
+    <span>250 г • светлая обжарка</span>
+    <div class="price-row">
+      <div class="price">790 ₽</div>
+      <span class="tag">Фрукты</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="ethiopia"
+        data-title="Эфиопия Yirgacheffe"
+        data-price="790"
+        data-img="assets/img/products/ethiopia.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/colombia.png" alt="Колумбия Supremo"/>
+  <div class="body">
+    <strong>Колумбия Supremo</strong>
+    <span>1 кг • средняя обжарка</span>
+    <div class="price-row">
+      <div class="price">1890 ₽</div>
+      <span class="tag">1 кг</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="colombia"
+        data-title="Колумбия Supremo"
+        data-price="1890"
+        data-img="assets/img/products/colombia.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/decaf.png" alt="Decaf без кофеина"/>
+  <div class="body">
+    <strong>Decaf без кофеина</strong>
+    <span>250 г • средняя обжарка</span>
+    <div class="price-row">
+      <div class="price">860 ₽</div>
+      <span class="tag">Decaf</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="decaf"
+        data-title="Decaf без кофеина"
+        data-price="860"
+        data-img="assets/img/products/decaf.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/drip_pack.png" alt="Дрип‑пакеты (10 шт.)"/>
+  <div class="body">
+    <strong>Дрип‑пакеты (10 шт.)</strong>
+    <span>10×10 г • удобно</span>
+    <div class="price-row">
+      <div class="price">590 ₽</div>
+      <span class="tag">В дорогу</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="drip_pack"
+        data-title="Дрип‑пакеты (10 шт.)"
+        data-price="590"
+        data-img="assets/img/products/drip_pack.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/grinder.png" alt="Кофемолка ручная"/>
+  <div class="body">
+    <strong>Кофемолка ручная</strong>
+    <span>нерж. сталь</span>
+    <div class="price-row">
+      <div class="price">2490 ₽</div>
+      <span class="tag">Аксессуар</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="grinder"
+        data-title="Кофемолка ручная"
+        data-price="2490"
+        data-img="assets/img/products/grinder.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/mug.png" alt="Кружка керамическая"/>
+  <div class="body">
+    <strong>Кружка керамическая</strong>
+    <span>350 мл</span>
+    <div class="price-row">
+      <div class="price">490 ₽</div>
+      <span class="tag">Подарок</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="mug"
+        data-title="Кружка керамическая"
+        data-price="490"
+        data-img="assets/img/products/mug.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/filters.png" alt="Фильтры V60 (100 шт.)"/>
+  <div class="body">
+    <strong>Фильтры V60 (100 шт.)</strong>
+    <span>бумага</span>
+    <div class="price-row">
+      <div class="price">350 ₽</div>
+      <span class="tag">V60</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="filters"
+        data-title="Фильтры V60 (100 шт.)"
+        data-price="350"
+        data-img="assets/img/products/filters.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>RoastLab</strong>
+        <div class="small-note">Демо-магазин для портфолио: каталог, карточка товара, корзина, checkout. 2026</div>
+      </div>
+      <div style="text-align:right">
+        <div class="small-note">Поддержка: hello@roastlab.demo • +7 (900) 000‑00‑00</div>
+        <div class="small-note">Оплата/доставка — демо. Подключается в реальном проекте.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

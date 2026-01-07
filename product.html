@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Эспрессо Blend — RoastLab (демо)</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 10c0-2.2 1.8-4 4-4h2c2.2 0 4 1.8 4 4v3c0 2.8-2.2 5-5 5s-5-2.2-5-5v-3Z" stroke="white" stroke-width="2.2"/>
+            <path d="M17 11h1c1.7 0 3 1.3 3 3s-1.3 3-3 3h-1" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Roast<span style="opacity:.65">Lab</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация магазина">
+        <a href="catalog.html" style="background: rgba(192,122,90,0.12); color: var(--text)">Каталог</a>
+        <a href="shipping.html">Доставка</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary small" href="catalog.html">Купить</a>
+        <a class="cart-btn" href="cart.html" aria-label="Корзина">
+          🛒 <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+        <button class="burger" data-burger aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="catalog.html">Каталог</a>
+      <a href="shipping.html">Доставка</a>
+      <a href="about.html">О бренде</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / Эспрессо Blend</div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="product-layout">
+        <div class="gallery">
+          <img src="assets/img/products/espresso_blend.png" alt="Эспрессо Blend"/>
+        </div>
+
+        <div class="panel">
+          <h1>Эспрессо Blend</h1>
+          <div class="muted">250 г • средняя обжарка • Демо‑карточка товара для портфолио</div>
+
+          <div style="height:12px"></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+            <div class="price" style="font-size:22px">690 ₽</div>
+            <span class="tag">Хит</span>
+          </div>
+
+          <div class="hr"></div>
+
+          <div style="font-weight:900; font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted2)">Выберите вариант</div>
+          <div class="variant-row">
+            <button type="button" class="variant active" data-variant="250 г">250 г</button>
+            <button type="button" class="variant" data-variant="1 кг">1 кг</button>
+            <button type="button" class="variant" data-variant="молотый">молотый</button>
+          </div>
+          <input type="hidden" data-variant-hidden value="250 г"/>
+
+          <div style="height:12px"></div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <button class="btn" type="button"
+              data-add-product
+              data-id="espresso_blend"
+              data-title="Эспрессо Blend"
+              data-price="690"
+              data-img="assets/img/products/espresso_blend.png"
+            >Добавить в корзину</button>
+            <a class="btn secondary" href="checkout.html">Купить в 1 клик (демо)</a>
+          </div>
+
+          <div style="height:14px"></div>
+          <div class="card pad" style="background: rgba(192,122,90,0.08)">
+            <strong>Доставка</strong>
+            <div class="small-note">Бесплатно от 2 500 ₽. Иначе — 290 ₽. (Демо)</div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 10px">Характеристики</h3>
+          <table class="table" aria-label="Характеристики товара">
+            <tbody>
+              <tr><td>Регион</td><td>Бленд (демо)</td></tr>
+              <tr><td>Обжарка</td><td>Средняя</td></tr>
+              <tr><td>Вкус</td><td>Шоколад, орех, карамель</td></tr>
+              <tr><td>Подходит для</td><td>Эспрессо / Молочных напитков</td></tr>
+            </tbody>
+          </table>
+
+          <div class="hr"></div>
+          <h3 style="margin:0 0 10px">Описание</h3>
+          <div class="muted">
+            Сбалансированный эспрессо‑бленд на каждый день. Хорош в автомате и в рожке, отлично раскрывается в капучино.
+            (Текст демо — в реальном проекте: уникальное описание + SEO‑блоки + FAQ)
+          </div>
+
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+
+      <div class="grid2">
+        <div class="card pad">
+          <h3>Отзывы</h3>
+          <p style="margin:0; color:var(--muted)">В реальном магазине — рейтинг, фото, фильтр, вопросы/ответы. В демо — заглушка.</p>
+        </div>
+        <div class="card pad">
+          <h3>Часто покупают вместе</h3>
+          <div class="pills" style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">Фильтры V60</span>
+            <span class="tag">Кружка</span>
+            <span class="tag">Дрип‑пакеты</span>
+          </div>
+          <div style="height:12px"></div>
+          <a class="btn secondary" href="catalog.html">Перейти в каталог</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>RoastLab</strong>
+        <div class="small-note">Демо-магазин для портфолио: каталог, карточка товара, корзина, checkout. 2026</div>
+      </div>
+      <div style="text-align:right">
+        <div class="small-note">Поддержка: hello@roastlab.demo • +7 (900) 000‑00‑00</div>
+        <div class="small-note">Оплата/доставка — демо. Подключается в реальном проекте.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

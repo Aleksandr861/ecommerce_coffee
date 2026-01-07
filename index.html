@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>RoastLab — интернет-магазин (демо)</title>
+  <meta name="description" content="Демо интернет-магазина: каталог, карточка товара, корзина, оформление заказа."/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 10c0-2.2 1.8-4 4-4h2c2.2 0 4 1.8 4 4v3c0 2.8-2.2 5-5 5s-5-2.2-5-5v-3Z" stroke="white" stroke-width="2.2"/>
+            <path d="M17 11h1c1.7 0 3 1.3 3 3s-1.3 3-3 3h-1" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Roast<span style="opacity:.65">Lab</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация магазина">
+        <a href="catalog.html">Каталог</a>
+        <a href="shipping.html">Доставка</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary small" href="catalog.html">Купить</a>
+        <a class="cart-btn" href="cart.html" aria-label="Корзина">
+          🛒 <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+        <button class="burger" data-burger aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="catalog.html">Каталог</a>
+      <a href="shipping.html">Доставка</a>
+      <a href="about.html">О бренде</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-card hero-left">
+          <div class="badge"><span class="dot"></span> Бесплатная доставка от 2 500 ₽ (демо)</div>
+          <h1>Спешелти кофе и аксессуары — с понятной карточкой товара</h1>
+          <p>Демо‑магазин для портфолио: UX каталога, фильтры, карточка товара, корзина и checkout. Без внешних зависимостей — открывается локально.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="catalog.html">Перейти в каталог</a>
+            <a class="btn secondary" href="product.html">Карточка товара</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta"><strong>7 дней</strong><span>свежая обжарка</span></div>
+            <div class="meta"><strong>Адаптив</strong><span>desktop + mobile</span></div>
+            <div class="meta"><strong>Cart JS</strong><span>localStorage</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card hero-right">
+          <img src="assets/img/hero.jpg" alt="Кофе (плейсхолдер)"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Хиты недели</h2>
+      <p class="lead">Набор карточек товара: фото, краткое описание, цена, бейдж, CTA. Кнопка «В корзину» работает.</p>
+      <div class="grid4">
+        
+<article class="card product-card">
+  <img src="assets/img/products/espresso_blend.png" alt="Эспрессо Blend"/>
+  <div class="body">
+    <strong>Эспрессо Blend</strong>
+    <span>250 г • средняя обжарка</span>
+    <div class="price-row">
+      <div class="price">690 ₽</div>
+      <span class="tag">Хит</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="espresso_blend"
+        data-title="Эспрессо Blend"
+        data-price="690"
+        data-img="assets/img/products/espresso_blend.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/ethiopia.png" alt="Эфиопия Yirgacheffe"/>
+  <div class="body">
+    <strong>Эфиопия Yirgacheffe</strong>
+    <span>250 г • светлая обжарка</span>
+    <div class="price-row">
+      <div class="price">790 ₽</div>
+      <span class="tag">Фрукты</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="ethiopia"
+        data-title="Эфиопия Yirgacheffe"
+        data-price="790"
+        data-img="assets/img/products/ethiopia.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/colombia.png" alt="Колумбия Supremo"/>
+  <div class="body">
+    <strong>Колумбия Supremo</strong>
+    <span>1 кг • средняя обжарка</span>
+    <div class="price-row">
+      <div class="price">1890 ₽</div>
+      <span class="tag">1 кг</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="colombia"
+        data-title="Колумбия Supremo"
+        data-price="1890"
+        data-img="assets/img/products/colombia.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="card product-card">
+  <img src="assets/img/products/decaf.png" alt="Decaf без кофеина"/>
+  <div class="body">
+    <strong>Decaf без кофеина</strong>
+    <span>250 г • средняя обжарка</span>
+    <div class="price-row">
+      <div class="price">860 ₽</div>
+      <span class="tag">Decaf</span>
+    </div>
+    <div style="height:12px"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn small secondary" href="product.html">Открыть</a>
+      <button class="btn small" type="button"
+        data-add-to-cart
+        data-id="decaf"
+        data-title="Decaf без кофеина"
+        data-price="860"
+        data-img="assets/img/products/decaf.png"
+        data-variant="250 г"
+      >В корзину</button>
+    </div>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid3">
+        <div class="card pad">
+          <h3>Фильтры и подбор</h3>
+          <p>В каталоге предусмотрены: обжарка, вкус, цена, формат. Это повышает удобство выбора.</p>
+        </div>
+        <div class="card pad">
+          <h3>Карточка товара</h3>
+          <p>Галерея, варианты веса, характеристики таблицей, доставка/оплата, отзывы, рекомендации.</p>
+        </div>
+        <div class="card pad">
+          <h3>Корзина и checkout</h3>
+          <p>Счётчик в шапке, изменение количества, итоговая сумма, демо‑оформление заказа.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card pad" style="display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap">
+        <div>
+          <h3 style="margin:0 0 6px">Готовы к заказу?</h3>
+          <p style="margin:0; color:var(--muted)">Перейдите в каталог и добавьте пару товаров — корзина обновится автоматически.</p>
+        </div>
+        <a class="btn" href="catalog.html">Открыть каталог</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>RoastLab</strong>
+        <div class="small-note">Демо-магазин для портфолио: каталог, карточка товара, корзина, checkout. 2026</div>
+      </div>
+      <div style="text-align:right">
+        <div class="small-note">Поддержка: hello@roastlab.demo • +7 (900) 000‑00‑00</div>
+        <div class="small-note">Оплата/доставка — демо. Подключается в реальном проекте.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
